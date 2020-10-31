@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF894689254DB1E8009D29AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF894688254DB1E8009D29AA /* AppDelegate.swift */; };
+		FF89468B254DB1E8009D29AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF89468A254DB1E8009D29AA /* ViewController.swift */; };
+		FF89468D254DB1E9009D29AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF89468C254DB1E9009D29AA /* Assets.xcassets */; };
+		FF894690254DB1E9009D29AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF89468E254DB1E9009D29AA /* Main.storyboard */; };
+		FF89469C254DB1E9009D29AA /* coalayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF89469B254DB1E9009D29AA /* coalayTests.swift */; };
+		FF8946A7254DB1E9009D29AA /* coalayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8946A6254DB1E9009D29AA /* coalayUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF894698254DB1E9009D29AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF89467D254DB1E8009D29AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF894684254DB1E8009D29AA;
+			remoteInfo = coalay;
+		};
+		FF8946A3254DB1E9009D29AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF89467D254DB1E8009D29AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF894684254DB1E8009D29AA;
+			remoteInfo = coalay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF894685254DB1E8009D29AA /* coalay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coalay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF894688254DB1E8009D29AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF89468A254DB1E8009D29AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF89468C254DB1E9009D29AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF89468F254DB1E9009D29AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF894691254DB1E9009D29AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF894692254DB1E9009D29AA /* coalay.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = coalay.entitlements; sourceTree = "<group>"; };
+		FF894697254DB1E9009D29AA /* coalayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = coalayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF89469B254DB1E9009D29AA /* coalayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coalayTests.swift; sourceTree = "<group>"; };
+		FF89469D254DB1E9009D29AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF8946A2254DB1E9009D29AA /* coalayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = coalayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF8946A6254DB1E9009D29AA /* coalayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coalayUITests.swift; sourceTree = "<group>"; };
+		FF8946A8254DB1E9009D29AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF894682254DB1E8009D29AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF894694254DB1E9009D29AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF89469F254DB1E9009D29AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF89467C254DB1E8009D29AA = {
+			isa = PBXGroup;
+			children = (
+				FF894687254DB1E8009D29AA /* coalay */,
+				FF89469A254DB1E9009D29AA /* coalayTests */,
+				FF8946A5254DB1E9009D29AA /* coalayUITests */,
+				FF894686254DB1E8009D29AA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF894686254DB1E8009D29AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF894685254DB1E8009D29AA /* coalay.app */,
+				FF894697254DB1E9009D29AA /* coalayTests.xctest */,
+				FF8946A2254DB1E9009D29AA /* coalayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF894687254DB1E8009D29AA /* coalay */ = {
+			isa = PBXGroup;
+			children = (
+				FF894688254DB1E8009D29AA /* AppDelegate.swift */,
+				FF89468A254DB1E8009D29AA /* ViewController.swift */,
+				FF89468C254DB1E9009D29AA /* Assets.xcassets */,
+				FF89468E254DB1E9009D29AA /* Main.storyboard */,
+				FF894691254DB1E9009D29AA /* Info.plist */,
+				FF894692254DB1E9009D29AA /* coalay.entitlements */,
+			);
+			path = coalay;
+			sourceTree = "<group>";
+		};
+		FF89469A254DB1E9009D29AA /* coalayTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF89469B254DB1E9009D29AA /* coalayTests.swift */,
+				FF89469D254DB1E9009D29AA /* Info.plist */,
+			);
+			path = coalayTests;
+			sourceTree = "<group>";
+		};
+		FF8946A5254DB1E9009D29AA /* coalayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FF8946A6254DB1E9009D29AA /* coalayUITests.swift */,
+				FF8946A8254DB1E9009D29AA /* Info.plist */,
+			);
+			path = coalayUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF894684254DB1E8009D29AA /* coalay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF8946AB254DB1E9009D29AA /* Build configuration list for PBXNativeTarget "coalay" */;
+			buildPhases = (
+				FF894681254DB1E8009D29AA /* Sources */,
+				FF894682254DB1E8009D29AA /* Frameworks */,
+				FF894683254DB1E8009D29AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = coalay;
+			productName = coalay;
+			productReference = FF894685254DB1E8009D29AA /* coalay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF894696254DB1E9009D29AA /* coalayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF8946AE254DB1E9009D29AA /* Build configuration list for PBXNativeTarget "coalayTests" */;
+			buildPhases = (
+				FF894693254DB1E9009D29AA /* Sources */,
+				FF894694254DB1E9009D29AA /* Frameworks */,
+				FF894695254DB1E9009D29AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF894699254DB1E9009D29AA /* PBXTargetDependency */,
+			);
+			name = coalayTests;
+			productName = coalayTests;
+			productReference = FF894697254DB1E9009D29AA /* coalayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FF8946A1254DB1E9009D29AA /* coalayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF8946B1254DB1E9009D29AA /* Build configuration list for PBXNativeTarget "coalayUITests" */;
+			buildPhases = (
+				FF89469E254DB1E9009D29AA /* Sources */,
+				FF89469F254DB1E9009D29AA /* Frameworks */,
+				FF8946A0254DB1E9009D29AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF8946A4254DB1E9009D29AA /* PBXTargetDependency */,
+			);
+			name = coalayUITests;
+			productName = coalayUITests;
+			productReference = FF8946A2254DB1E9009D29AA /* coalayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF89467D254DB1E8009D29AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "落合裕也";
+				TargetAttributes = {
+					FF894684254DB1E8009D29AA = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					FF894696254DB1E9009D29AA = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = FF894684254DB1E8009D29AA;
+					};
+					FF8946A1254DB1E9009D29AA = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = FF894684254DB1E8009D29AA;
+					};
+				};
+			};
+			buildConfigurationList = FF894680254DB1E8009D29AA /* Build configuration list for PBXProject "coalay" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF89467C254DB1E8009D29AA;
+			productRefGroup = FF894686254DB1E8009D29AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF894684254DB1E8009D29AA /* coalay */,
+				FF894696254DB1E9009D29AA /* coalayTests */,
+				FF8946A1254DB1E9009D29AA /* coalayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF894683254DB1E8009D29AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF89468D254DB1E9009D29AA /* Assets.xcassets in Resources */,
+				FF894690254DB1E9009D29AA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF894695254DB1E9009D29AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF8946A0254DB1E9009D29AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF894681254DB1E8009D29AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF89468B254DB1E8009D29AA /* ViewController.swift in Sources */,
+				FF894689254DB1E8009D29AA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF894693254DB1E9009D29AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF89469C254DB1E9009D29AA /* coalayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF89469E254DB1E9009D29AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF8946A7254DB1E9009D29AA /* coalayUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF894699254DB1E9009D29AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF894684254DB1E8009D29AA /* coalay */;
+			targetProxy = FF894698254DB1E9009D29AA /* PBXContainerItemProxy */;
+		};
+		FF8946A4254DB1E9009D29AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF894684254DB1E8009D29AA /* coalay */;
+			targetProxy = FF8946A3254DB1E9009D29AA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF89468E254DB1E9009D29AA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF89468F254DB1E9009D29AA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF8946A9254DB1E9009D29AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF8946AA254DB1E9009D29AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		FF8946AC254DB1E9009D29AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = coalay/coalay.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = THU24LT969;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = coalay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ochiyu.coalay.coalay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FF8946AD254DB1E9009D29AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = coalay/coalay.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = THU24LT969;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = coalay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ochiyu.coalay.coalay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		FF8946AF254DB1E9009D29AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = THU24LT969;
+				INFOPLIST_FILE = coalayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ochiyu.coalay.coalayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/coalay.app/Contents/MacOS/coalay";
+			};
+			name = Debug;
+		};
+		FF8946B0254DB1E9009D29AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = THU24LT969;
+				INFOPLIST_FILE = coalayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ochiyu.coalay.coalayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/coalay.app/Contents/MacOS/coalay";
+			};
+			name = Release;
+		};
+		FF8946B2254DB1E9009D29AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = THU24LT969;
+				INFOPLIST_FILE = coalayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ochiyu.coalay.coalayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = coalay;
+			};
+			name = Debug;
+		};
+		FF8946B3254DB1E9009D29AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = THU24LT969;
+				INFOPLIST_FILE = coalayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ochiyu.coalay.coalayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = coalay;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF894680254DB1E8009D29AA /* Build configuration list for PBXProject "coalay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF8946A9254DB1E9009D29AA /* Debug */,
+				FF8946AA254DB1E9009D29AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF8946AB254DB1E9009D29AA /* Build configuration list for PBXNativeTarget "coalay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF8946AC254DB1E9009D29AA /* Debug */,
+				FF8946AD254DB1E9009D29AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF8946AE254DB1E9009D29AA /* Build configuration list for PBXNativeTarget "coalayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF8946AF254DB1E9009D29AA /* Debug */,
+				FF8946B0254DB1E9009D29AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF8946B1254DB1E9009D29AA /* Build configuration list for PBXNativeTarget "coalayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF8946B2254DB1E9009D29AA /* Debug */,
+				FF8946B3254DB1E9009D29AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF89467D254DB1E8009D29AA /* Project object */;
+}
