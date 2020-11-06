@@ -10,7 +10,23 @@ import SwiftUI
 
 struct HostHome: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Icon()
+            Spacer()
+            Text("")
+                .frame(width: 300, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                .border(Color.white)
+            Spacer()
+            Button(action:{print("b")}) {
+                Text("部屋を作成する")
+            }
+            .background(Color.blue)
+            .cornerRadius(5)
+            .scaleEffect(1.5)
+            
+        
+            Spacer()
+        }
     }
 }
 

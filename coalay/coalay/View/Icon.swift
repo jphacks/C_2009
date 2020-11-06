@@ -11,7 +11,8 @@ import SwiftUI
 struct Icon:View {
     var body: some View{
         Text("COALAY")
-            .font(.custom("Times-Roman",size:80))
+            .font(.custom("Times-Roman",size:60))
             .foregroundColor(.white)
+            .padding(.init(top: 20, leading: 80, bottom: 10, trailing: 80))
     }
 }

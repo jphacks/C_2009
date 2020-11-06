@@ -24,7 +24,7 @@ struct ButtonAction: View {
 }
 
 struct ContentView: View {
-    @State var uiState = UIState.Home
+    @State var uiState = UIState.guestStarted
     @State var roomID :String = ""
     var chat = ChatViewModel()
     var body: some View {
@@ -33,8 +33,6 @@ struct ContentView: View {
             Gradation()
             VStack{
                 Spacer()
-                Icon()
-                Spacer()
                 Group{
                     
                     if uiState == .Home{
@@ -42,7 +40,7 @@ struct ContentView: View {
                         
                     }
                     else if uiState == .guestHome{
-                        GestHome()
+                        GestHome(id:roomID)
                         
                     }
                     else if uiState == .hostHome
