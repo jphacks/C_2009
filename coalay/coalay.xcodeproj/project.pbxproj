@@ -3,10 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		87E7285B28185DAB2705D0AB /* Pods_coalayTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B82D03B8D15C8B31A2019533 /* Pods_coalayTests.framework */; };
+		A92B90B409BC62252625785C /* Pods_coalay_coalayUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8939FAB76147EB4506BA7CE7 /* Pods_coalay_coalayUITests.framework */; };
+		E62E4FBD0580CEBF0780D44A /* Pods_coalay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72224B1F98F2AFBC547AFAC6 /* Pods_coalay.framework */; };
+		FF04814525557E44000FDD68 /* chatgrpc.grpc.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF04814325557E43000FDD68 /* chatgrpc.grpc.swift */; };
+		FF04814625557E44000FDD68 /* chatgrpc.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF04814425557E43000FDD68 /* chatgrpc.pb.swift */; };
+		FF04814A255580B3000FDD68 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF048149255580B3000FDD68 /* ChatViewModel.swift */; };
+		FF04814C2555A6CD000FDD68 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF04814B2555A6CD000FDD68 /* State.swift */; };
+		FF04814F2555A963000FDD68 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF04814E2555A963000FDD68 /* Icon.swift */; };
+		FF0481512555A9AB000FDD68 /* gradation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0481502555A9AB000FDD68 /* gradation.swift */; };
+		FF0481572555B4EC000FDD68 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0481562555B4EC000FDD68 /* Home.swift */; };
+		FF0481592555B524000FDD68 /* HostHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0481582555B524000FDD68 /* HostHome.swift */; };
+		FF04815D2555B54C000FDD68 /* GestHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF04815C2555B54C000FDD68 /* GestHome.swift */; };
+		FF0481612555B5B0000FDD68 /* HostStarted.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0481602555B5B0000FDD68 /* HostStarted.swift */; };
+		FF0481632555B5BF000FDD68 /* GuestStarted.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0481622555B5BF000FDD68 /* GuestStarted.swift */; };
 		FF8946C1254E0015009D29AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8946C0254E0015009D29AA /* AppDelegate.swift */; };
 		FF8946C3254E0015009D29AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8946C2254E0015009D29AA /* ContentView.swift */; };
 		FF8946C5254E0018009D29AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF8946C4254E0018009D29AA /* Assets.xcassets */; };
@@ -34,6 +48,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		46C4EE0B3A777B0B5941D35C /* Pods-coalayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coalayTests.debug.xcconfig"; path = "Target Support Files/Pods-coalayTests/Pods-coalayTests.debug.xcconfig"; sourceTree = "<group>"; };
+		72224B1F98F2AFBC547AFAC6 /* Pods_coalay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_coalay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8939FAB76147EB4506BA7CE7 /* Pods_coalay_coalayUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_coalay_coalayUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9260BB2949D7980485F1C72C /* Pods-coalay-coalayUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coalay-coalayUITests.release.xcconfig"; path = "Target Support Files/Pods-coalay-coalayUITests/Pods-coalay-coalayUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A2265535514F101F4DF946CD /* Pods-coalay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coalay.debug.xcconfig"; path = "Target Support Files/Pods-coalay/Pods-coalay.debug.xcconfig"; sourceTree = "<group>"; };
+		A7612A333C34EF7296AA0623 /* Pods-coalayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coalayTests.release.xcconfig"; path = "Target Support Files/Pods-coalayTests/Pods-coalayTests.release.xcconfig"; sourceTree = "<group>"; };
+		B7B419729DF33A1326477DEA /* Pods-coalay-coalayUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coalay-coalayUITests.debug.xcconfig"; path = "Target Support Files/Pods-coalay-coalayUITests/Pods-coalay-coalayUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B82D03B8D15C8B31A2019533 /* Pods_coalayTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_coalayTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3C9DCAC6902242C9F3351DF /* Pods-coalay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coalay.release.xcconfig"; path = "Target Support Files/Pods-coalay/Pods-coalay.release.xcconfig"; sourceTree = "<group>"; };
+		FF04814325557E43000FDD68 /* chatgrpc.grpc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = chatgrpc.grpc.swift; path = coalay/chatgrpc.grpc.swift; sourceTree = SOURCE_ROOT; };
+		FF04814425557E43000FDD68 /* chatgrpc.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = chatgrpc.pb.swift; path = coalay/chatgrpc.pb.swift; sourceTree = SOURCE_ROOT; };
+		FF048149255580B3000FDD68 /* ChatViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		FF04814B2555A6CD000FDD68 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		FF04814E2555A963000FDD68 /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
+		FF0481502555A9AB000FDD68 /* gradation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gradation.swift; sourceTree = "<group>"; };
+		FF0481562555B4EC000FDD68 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		FF0481582555B524000FDD68 /* HostHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostHome.swift; sourceTree = "<group>"; };
+		FF04815C2555B54C000FDD68 /* GestHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestHome.swift; sourceTree = "<group>"; };
+		FF0481602555B5B0000FDD68 /* HostStarted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostStarted.swift; sourceTree = "<group>"; };
+		FF0481622555B5BF000FDD68 /* GuestStarted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestStarted.swift; sourceTree = "<group>"; };
 		FF8946BD254E0015009D29AA /* coalay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coalay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF8946C0254E0015009D29AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF8946C2254E0015009D29AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E62E4FBD0580CEBF0780D44A /* Pods_coalay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87E7285B28185DAB2705D0AB /* Pods_coalayTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,12 +105,59 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A92B90B409BC62252625785C /* Pods_coalay_coalayUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B3DA7FEB6173CCBDFC9B3BC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72224B1F98F2AFBC547AFAC6 /* Pods_coalay.framework */,
+				8939FAB76147EB4506BA7CE7 /* Pods_coalay_coalayUITests.framework */,
+				B82D03B8D15C8B31A2019533 /* Pods_coalayTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD9B4EC6203D81573652DB5A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A2265535514F101F4DF946CD /* Pods-coalay.debug.xcconfig */,
+				F3C9DCAC6902242C9F3351DF /* Pods-coalay.release.xcconfig */,
+				B7B419729DF33A1326477DEA /* Pods-coalay-coalayUITests.debug.xcconfig */,
+				9260BB2949D7980485F1C72C /* Pods-coalay-coalayUITests.release.xcconfig */,
+				46C4EE0B3A777B0B5941D35C /* Pods-coalayTests.debug.xcconfig */,
+				A7612A333C34EF7296AA0623 /* Pods-coalayTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FF04814225557E22000FDD68 /* grpc */ = {
+			isa = PBXGroup;
+			children = (
+				FF04814325557E43000FDD68 /* chatgrpc.grpc.swift */,
+				FF04814425557E43000FDD68 /* chatgrpc.pb.swift */,
+			);
+			path = grpc;
+			sourceTree = "<group>";
+		};
+		FF04814D2555A94B000FDD68 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF04814E2555A963000FDD68 /* Icon.swift */,
+				FF0481502555A9AB000FDD68 /* gradation.swift */,
+				FF0481562555B4EC000FDD68 /* Home.swift */,
+				FF0481582555B524000FDD68 /* HostHome.swift */,
+				FF04815C2555B54C000FDD68 /* GestHome.swift */,
+				FF0481602555B5B0000FDD68 /* HostStarted.swift */,
+				FF0481622555B5BF000FDD68 /* GuestStarted.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		FF8946B4254E0015009D29AA = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +165,8 @@
 				FF8946D5254E0019009D29AA /* coalayTests */,
 				FF8946E0254E0019009D29AA /* coalayUITests */,
 				FF8946BE254E0015009D29AA /* Products */,
+				DD9B4EC6203D81573652DB5A /* Pods */,
+				B3DA7FEB6173CCBDFC9B3BC7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,13 +183,17 @@
 		FF8946BF254E0015009D29AA /* coalay */ = {
 			isa = PBXGroup;
 			children = (
+				FF04814D2555A94B000FDD68 /* View */,
+				FF8946C6254E0018009D29AA /* Preview Content */,
+				FF04814225557E22000FDD68 /* grpc */,
+				FF048149255580B3000FDD68 /* ChatViewModel.swift */,
 				FF8946C0254E0015009D29AA /* AppDelegate.swift */,
 				FF8946C2254E0015009D29AA /* ContentView.swift */,
+				FF04814B2555A6CD000FDD68 /* State.swift */,
 				FF8946C4254E0018009D29AA /* Assets.xcassets */,
 				FF8946C9254E0018009D29AA /* Main.storyboard */,
 				FF8946CC254E0018009D29AA /* Info.plist */,
 				FF8946CD254E0018009D29AA /* coalay.entitlements */,
-				FF8946C6254E0018009D29AA /* Preview Content */,
 			);
 			path = coalay;
 			sourceTree = "<group>";
@@ -142,9 +231,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF8946E6254E0019009D29AA /* Build configuration list for PBXNativeTarget "coalay" */;
 			buildPhases = (
+				EAA5B4428AEA88204D6C2CB4 /* [CP] Check Pods Manifest.lock */,
 				FF8946B9254E0015009D29AA /* Sources */,
 				FF8946BA254E0015009D29AA /* Frameworks */,
 				FF8946BB254E0015009D29AA /* Resources */,
+				710712E3B2B2EF5E06CB7BB6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -159,6 +250,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF8946E9254E0019009D29AA /* Build configuration list for PBXNativeTarget "coalayTests" */;
 			buildPhases = (
+				2285946E98E485723E76C681 /* [CP] Check Pods Manifest.lock */,
 				FF8946CE254E0019009D29AA /* Sources */,
 				FF8946CF254E0019009D29AA /* Frameworks */,
 				FF8946D0254E0019009D29AA /* Resources */,
@@ -177,9 +269,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF8946EC254E0019009D29AA /* Build configuration list for PBXNativeTarget "coalayUITests" */;
 			buildPhases = (
+				FD5B7DE64D2CD7EF42E91748 /* [CP] Check Pods Manifest.lock */,
 				FF8946D9254E0019009D29AA /* Sources */,
 				FF8946DA254E0019009D29AA /* Frameworks */,
 				FF8946DB254E0019009D29AA /* Resources */,
+				555562D72A3058BC4B5F5268 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -261,13 +355,127 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2285946E98E485723E76C681 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-coalayTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		555562D72A3058BC4B5F5268 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-coalay-coalayUITests/Pods-coalay-coalayUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-coalay-coalayUITests/Pods-coalay-coalayUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-coalay-coalayUITests/Pods-coalay-coalayUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		710712E3B2B2EF5E06CB7BB6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-coalay/Pods-coalay-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-coalay/Pods-coalay-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-coalay/Pods-coalay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAA5B4428AEA88204D6C2CB4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-coalay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD5B7DE64D2CD7EF42E91748 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-coalay-coalayUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FF8946B9254E0015009D29AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF04814625557E44000FDD68 /* chatgrpc.pb.swift in Sources */,
+				FF0481632555B5BF000FDD68 /* GuestStarted.swift in Sources */,
+				FF0481612555B5B0000FDD68 /* HostStarted.swift in Sources */,
+				FF04814A255580B3000FDD68 /* ChatViewModel.swift in Sources */,
+				FF04815D2555B54C000FDD68 /* GestHome.swift in Sources */,
+				FF0481512555A9AB000FDD68 /* gradation.swift in Sources */,
+				FF04814F2555A963000FDD68 /* Icon.swift in Sources */,
+				FF0481572555B4EC000FDD68 /* Home.swift in Sources */,
+				FF04814525557E44000FDD68 /* chatgrpc.grpc.swift in Sources */,
+				FF0481592555B524000FDD68 /* HostHome.swift in Sources */,
 				FF8946C3254E0015009D29AA /* ContentView.swift in Sources */,
 				FF8946C1254E0015009D29AA /* AppDelegate.swift in Sources */,
+				FF04814C2555A6CD000FDD68 /* State.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +637,7 @@
 		};
 		FF8946E7254E0019009D29AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2265535514F101F4DF946CD /* Pods-coalay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = coalay/coalay.entitlements;
@@ -452,6 +661,7 @@
 		};
 		FF8946E8254E0019009D29AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3C9DCAC6902242C9F3351DF /* Pods-coalay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = coalay/coalay.entitlements;
@@ -475,6 +685,7 @@
 		};
 		FF8946EA254E0019009D29AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46C4EE0B3A777B0B5941D35C /* Pods-coalayTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -497,6 +708,7 @@
 		};
 		FF8946EB254E0019009D29AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7612A333C34EF7296AA0623 /* Pods-coalayTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -519,6 +731,7 @@
 		};
 		FF8946ED254E0019009D29AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7B419729DF33A1326477DEA /* Pods-coalay-coalayUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -539,6 +752,7 @@
 		};
 		FF8946EE254E0019009D29AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9260BB2949D7980485F1C72C /* Pods-coalay-coalayUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
