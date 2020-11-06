@@ -36,6 +36,7 @@ struct ContentView: View {
     @State var desktop = false
     @State var room = false
     @State var id = ""
+    var chat = Chat()
     var body: some View {
         
         ZStack {
@@ -74,11 +75,11 @@ struct ContentView: View {
                 .scaleEffect(1.5)
 
                 Spacer()
-                Button(action:{self.desktop.toggle()}){
+                Button(action:{self.chat.greetServer(name: "hello")}){
                     Text("モーダル")
                 }
                 .sheet(isPresented: $desktop){
-                    ModalView(isActive: $desktop)
+                    ModalView(isActive: self.$desktop)
                 }
             }
         }
@@ -94,7 +95,7 @@ struct ModalView: View {
             Spacer()
             Text("Modal View").padding()
             Button("Close Modal") {
-                isActive = false
+                self.isActive = false
             }
             Spacer()
         }.edgesIgnoringSafeArea(.all)
