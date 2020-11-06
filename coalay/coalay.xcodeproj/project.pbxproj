@@ -12,8 +12,15 @@
 		E62E4FBD0580CEBF0780D44A /* Pods_coalay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72224B1F98F2AFBC547AFAC6 /* Pods_coalay.framework */; };
 		FF04814525557E44000FDD68 /* chatgrpc.grpc.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF04814325557E43000FDD68 /* chatgrpc.grpc.swift */; };
 		FF04814625557E44000FDD68 /* chatgrpc.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF04814425557E43000FDD68 /* chatgrpc.pb.swift */; };
-		FF04814825557E70000FDD68 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF04814725557E70000FDD68 /* HomeViewModel.swift */; };
-		FF04814A255580B3000FDD68 /* chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF048149255580B3000FDD68 /* chat.swift */; };
+		FF04814A255580B3000FDD68 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF048149255580B3000FDD68 /* ChatViewModel.swift */; };
+		FF04814C2555A6CD000FDD68 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF04814B2555A6CD000FDD68 /* State.swift */; };
+		FF04814F2555A963000FDD68 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF04814E2555A963000FDD68 /* Icon.swift */; };
+		FF0481512555A9AB000FDD68 /* gradation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0481502555A9AB000FDD68 /* gradation.swift */; };
+		FF0481572555B4EC000FDD68 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0481562555B4EC000FDD68 /* Home.swift */; };
+		FF0481592555B524000FDD68 /* HostHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0481582555B524000FDD68 /* HostHome.swift */; };
+		FF04815D2555B54C000FDD68 /* GestHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF04815C2555B54C000FDD68 /* GestHome.swift */; };
+		FF0481612555B5B0000FDD68 /* HostStarted.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0481602555B5B0000FDD68 /* HostStarted.swift */; };
+		FF0481632555B5BF000FDD68 /* GuestStarted.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0481622555B5BF000FDD68 /* GuestStarted.swift */; };
 		FF8946C1254E0015009D29AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8946C0254E0015009D29AA /* AppDelegate.swift */; };
 		FF8946C3254E0015009D29AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8946C2254E0015009D29AA /* ContentView.swift */; };
 		FF8946C5254E0018009D29AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF8946C4254E0018009D29AA /* Assets.xcassets */; };
@@ -52,8 +59,15 @@
 		F3C9DCAC6902242C9F3351DF /* Pods-coalay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coalay.release.xcconfig"; path = "Target Support Files/Pods-coalay/Pods-coalay.release.xcconfig"; sourceTree = "<group>"; };
 		FF04814325557E43000FDD68 /* chatgrpc.grpc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = chatgrpc.grpc.swift; path = coalay/chatgrpc.grpc.swift; sourceTree = SOURCE_ROOT; };
 		FF04814425557E43000FDD68 /* chatgrpc.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = chatgrpc.pb.swift; path = coalay/chatgrpc.pb.swift; sourceTree = SOURCE_ROOT; };
-		FF04814725557E70000FDD68 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		FF048149255580B3000FDD68 /* chat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = chat.swift; sourceTree = "<group>"; };
+		FF048149255580B3000FDD68 /* ChatViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		FF04814B2555A6CD000FDD68 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		FF04814E2555A963000FDD68 /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
+		FF0481502555A9AB000FDD68 /* gradation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gradation.swift; sourceTree = "<group>"; };
+		FF0481562555B4EC000FDD68 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		FF0481582555B524000FDD68 /* HostHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostHome.swift; sourceTree = "<group>"; };
+		FF04815C2555B54C000FDD68 /* GestHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestHome.swift; sourceTree = "<group>"; };
+		FF0481602555B5B0000FDD68 /* HostStarted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostStarted.swift; sourceTree = "<group>"; };
+		FF0481622555B5BF000FDD68 /* GuestStarted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestStarted.swift; sourceTree = "<group>"; };
 		FF8946BD254E0015009D29AA /* coalay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coalay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF8946C0254E0015009D29AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF8946C2254E0015009D29AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -130,6 +144,20 @@
 			path = grpc;
 			sourceTree = "<group>";
 		};
+		FF04814D2555A94B000FDD68 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF04814E2555A963000FDD68 /* Icon.swift */,
+				FF0481502555A9AB000FDD68 /* gradation.swift */,
+				FF0481562555B4EC000FDD68 /* Home.swift */,
+				FF0481582555B524000FDD68 /* HostHome.swift */,
+				FF04815C2555B54C000FDD68 /* GestHome.swift */,
+				FF0481602555B5B0000FDD68 /* HostStarted.swift */,
+				FF0481622555B5BF000FDD68 /* GuestStarted.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		FF8946B4254E0015009D29AA = {
 			isa = PBXGroup;
 			children = (
@@ -155,16 +183,17 @@
 		FF8946BF254E0015009D29AA /* coalay */ = {
 			isa = PBXGroup;
 			children = (
-				FF048149255580B3000FDD68 /* chat.swift */,
+				FF04814D2555A94B000FDD68 /* View */,
+				FF8946C6254E0018009D29AA /* Preview Content */,
 				FF04814225557E22000FDD68 /* grpc */,
+				FF048149255580B3000FDD68 /* ChatViewModel.swift */,
 				FF8946C0254E0015009D29AA /* AppDelegate.swift */,
 				FF8946C2254E0015009D29AA /* ContentView.swift */,
+				FF04814B2555A6CD000FDD68 /* State.swift */,
 				FF8946C4254E0018009D29AA /* Assets.xcassets */,
 				FF8946C9254E0018009D29AA /* Main.storyboard */,
 				FF8946CC254E0018009D29AA /* Info.plist */,
 				FF8946CD254E0018009D29AA /* coalay.entitlements */,
-				FF8946C6254E0018009D29AA /* Preview Content */,
-				FF04814725557E70000FDD68 /* HomeViewModel.swift */,
 			);
 			path = coalay;
 			sourceTree = "<group>";
@@ -435,11 +464,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF04814625557E44000FDD68 /* chatgrpc.pb.swift in Sources */,
-				FF04814A255580B3000FDD68 /* chat.swift in Sources */,
+				FF0481632555B5BF000FDD68 /* GuestStarted.swift in Sources */,
+				FF0481612555B5B0000FDD68 /* HostStarted.swift in Sources */,
+				FF04814A255580B3000FDD68 /* ChatViewModel.swift in Sources */,
+				FF04815D2555B54C000FDD68 /* GestHome.swift in Sources */,
+				FF0481512555A9AB000FDD68 /* gradation.swift in Sources */,
+				FF04814F2555A963000FDD68 /* Icon.swift in Sources */,
+				FF0481572555B4EC000FDD68 /* Home.swift in Sources */,
 				FF04814525557E44000FDD68 /* chatgrpc.grpc.swift in Sources */,
+				FF0481592555B524000FDD68 /* HostHome.swift in Sources */,
 				FF8946C3254E0015009D29AA /* ContentView.swift in Sources */,
-				FF04814825557E70000FDD68 /* HomeViewModel.swift in Sources */,
 				FF8946C1254E0015009D29AA /* AppDelegate.swift in Sources */,
+				FF04814C2555A6CD000FDD68 /* State.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
