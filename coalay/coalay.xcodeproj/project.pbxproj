@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E2D855E2555BB4C00E8EE3C /* tool_bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2D855D2555BB4C00E8EE3C /* tool_bar.swift */; };
 		87E7285B28185DAB2705D0AB /* Pods_coalayTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B82D03B8D15C8B31A2019533 /* Pods_coalayTests.framework */; };
 		A92B90B409BC62252625785C /* Pods_coalay_coalayUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8939FAB76147EB4506BA7CE7 /* Pods_coalay_coalayUITests.framework */; };
 		E62E4FBD0580CEBF0780D44A /* Pods_coalay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72224B1F98F2AFBC547AFAC6 /* Pods_coalay.framework */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E2D855D2555BB4C00E8EE3C /* tool_bar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tool_bar.swift; sourceTree = "<group>"; };
 		46C4EE0B3A777B0B5941D35C /* Pods-coalayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coalayTests.debug.xcconfig"; path = "Target Support Files/Pods-coalayTests/Pods-coalayTests.debug.xcconfig"; sourceTree = "<group>"; };
 		72224B1F98F2AFBC547AFAC6 /* Pods_coalay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_coalay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8939FAB76147EB4506BA7CE7 /* Pods_coalay_coalayUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_coalay_coalayUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,6 +151,7 @@
 			children = (
 				FF04814E2555A963000FDD68 /* Icon.swift */,
 				FF0481502555A9AB000FDD68 /* gradation.swift */,
+				2E2D855D2555BB4C00E8EE3C /* tool_bar.swift */,
 				FF0481562555B4EC000FDD68 /* Home.swift */,
 				FF0481582555B524000FDD68 /* HostHome.swift */,
 				FF04815C2555B54C000FDD68 /* GestHome.swift */,
@@ -470,6 +473,7 @@
 				FF04815D2555B54C000FDD68 /* GestHome.swift in Sources */,
 				FF0481512555A9AB000FDD68 /* gradation.swift in Sources */,
 				FF04814F2555A963000FDD68 /* Icon.swift in Sources */,
+				2E2D855E2555BB4C00E8EE3C /* tool_bar.swift in Sources */,
 				FF0481572555B4EC000FDD68 /* Home.swift in Sources */,
 				FF04814525557E44000FDD68 /* chatgrpc.grpc.swift in Sources */,
 				FF0481592555B524000FDD68 /* HostHome.swift in Sources */,
@@ -644,7 +648,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"coalay/Preview Content\"";
-				DEVELOPMENT_TEAM = THU24LT969;
+				DEVELOPMENT_TEAM = T2J8JJ57MM;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = coalay/Info.plist;
@@ -668,7 +672,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"coalay/Preview Content\"";
-				DEVELOPMENT_TEAM = THU24LT969;
+				DEVELOPMENT_TEAM = T2J8JJ57MM;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = coalay/Info.plist;
