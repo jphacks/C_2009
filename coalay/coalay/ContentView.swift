@@ -7,7 +7,7 @@
 //
 
 import SwiftUI
-
+import Combine
 
 struct ButtonAction: View {
     @State var bool:Bool
@@ -38,31 +38,26 @@ struct ContentView: View {
                 Group{
                     
                     if uiState == .Home{
-                        Icon()
+                        Home()
                         
                     }
                     else if uiState == .guestHome{
-                        Text("guestHome")
+                        GestHome()
                         
                     }
                     else if uiState == .hostHome
                     {
-                        Text("hostHOme")
+                        HostHome()
 
                     }
                     else if uiState == .hostStarted
                     {
-                        Text("hostStarted")
+                        HostStarted()
 
                     }
                     else if uiState == .guestStarted
                     {
-                        Text("guestStarted")
-
-                    }
-                    else if uiState == .Disappear
-                    {
-                        Text(".Disapper")
+                        GuestStarted()
 
                     }
                 }
