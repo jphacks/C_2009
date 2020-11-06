@@ -21,6 +21,9 @@
 		FF04815D2555B54C000FDD68 /* GestHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF04815C2555B54C000FDD68 /* GestHome.swift */; };
 		FF0481612555B5B0000FDD68 /* HostStarted.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0481602555B5B0000FDD68 /* HostStarted.swift */; };
 		FF0481632555B5BF000FDD68 /* GuestStarted.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0481622555B5BF000FDD68 /* GuestStarted.swift */; };
+		FF0481652555BE5D000FDD68 /* TransparentWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0481642555BE5D000FDD68 /* TransparentWindow.swift */; };
+		FF0481682555C318000FDD68 /* OpaqueWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0481672555C318000FDD68 /* OpaqueWindow.swift */; };
+		FF04816A2555CB9C000FDD68 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0481692555CB9C000FDD68 /* Setting.swift */; };
 		FF8946C1254E0015009D29AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8946C0254E0015009D29AA /* AppDelegate.swift */; };
 		FF8946C3254E0015009D29AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8946C2254E0015009D29AA /* ContentView.swift */; };
 		FF8946C5254E0018009D29AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF8946C4254E0018009D29AA /* Assets.xcassets */; };
@@ -68,6 +71,9 @@
 		FF04815C2555B54C000FDD68 /* GestHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestHome.swift; sourceTree = "<group>"; };
 		FF0481602555B5B0000FDD68 /* HostStarted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostStarted.swift; sourceTree = "<group>"; };
 		FF0481622555B5BF000FDD68 /* GuestStarted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestStarted.swift; sourceTree = "<group>"; };
+		FF0481642555BE5D000FDD68 /* TransparentWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransparentWindow.swift; sourceTree = "<group>"; };
+		FF0481672555C318000FDD68 /* OpaqueWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpaqueWindow.swift; sourceTree = "<group>"; };
+		FF0481692555CB9C000FDD68 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 		FF8946BD254E0015009D29AA /* coalay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coalay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF8946C0254E0015009D29AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF8946C2254E0015009D29AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -147,6 +153,7 @@
 		FF04814D2555A94B000FDD68 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FF0481642555BE5D000FDD68 /* TransparentWindow.swift */,
 				FF04814E2555A963000FDD68 /* Icon.swift */,
 				FF0481502555A9AB000FDD68 /* gradation.swift */,
 				FF0481562555B4EC000FDD68 /* Home.swift */,
@@ -156,6 +163,14 @@
 				FF0481622555B5BF000FDD68 /* GuestStarted.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		FF0481662555C2D5000FDD68 /* Window */ = {
+			isa = PBXGroup;
+			children = (
+				FF0481672555C318000FDD68 /* OpaqueWindow.swift */,
+			);
+			path = Window;
 			sourceTree = "<group>";
 		};
 		FF8946B4254E0015009D29AA = {
@@ -183,6 +198,7 @@
 		FF8946BF254E0015009D29AA /* coalay */ = {
 			isa = PBXGroup;
 			children = (
+				FF0481662555C2D5000FDD68 /* Window */,
 				FF04814D2555A94B000FDD68 /* View */,
 				FF8946C6254E0018009D29AA /* Preview Content */,
 				FF04814225557E22000FDD68 /* grpc */,
@@ -194,6 +210,7 @@
 				FF8946C9254E0018009D29AA /* Main.storyboard */,
 				FF8946CC254E0018009D29AA /* Info.plist */,
 				FF8946CD254E0018009D29AA /* coalay.entitlements */,
+				FF0481692555CB9C000FDD68 /* Setting.swift */,
 			);
 			path = coalay;
 			sourceTree = "<group>";
@@ -469,8 +486,11 @@
 				FF04814A255580B3000FDD68 /* ChatViewModel.swift in Sources */,
 				FF04815D2555B54C000FDD68 /* GestHome.swift in Sources */,
 				FF0481512555A9AB000FDD68 /* gradation.swift in Sources */,
+				FF04816A2555CB9C000FDD68 /* Setting.swift in Sources */,
 				FF04814F2555A963000FDD68 /* Icon.swift in Sources */,
 				FF0481572555B4EC000FDD68 /* Home.swift in Sources */,
+				FF0481652555BE5D000FDD68 /* TransparentWindow.swift in Sources */,
+				FF0481682555C318000FDD68 /* OpaqueWindow.swift in Sources */,
 				FF04814525557E44000FDD68 /* chatgrpc.grpc.swift in Sources */,
 				FF0481592555B524000FDD68 /* HostHome.swift in Sources */,
 				FF8946C3254E0015009D29AA /* ContentView.swift in Sources */,
