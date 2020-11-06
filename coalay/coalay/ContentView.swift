@@ -9,10 +9,10 @@
 import SwiftUI
 
 struct ButtonAction: View {
-    @State var bool:Bool
     @State var text:String
+    var fun: () -> ()
     var body: some View {
-        Button(action:{self.bool.toggle()}) {
+        Button(action:{self.fun()}) {
             Text(self.text)
         }
         .background(Color.blue)
@@ -22,12 +22,12 @@ struct ButtonAction: View {
     }
 }
 
-struct gradation:View {
+struct Gradation:View {
     @State var color1:Color
     @State var color2:Color
     var body: some View{
         LinearGradient(gradient: Gradient(colors: [self.color1, self.color2]), startPoint: .top, endPoint: .bottom)
-                .edgesIgnoringSafeArea(.all)
+            .edgesIgnoringSafeArea(.all)
     }
 }
 
@@ -40,7 +40,7 @@ struct ContentView: View {
         
         ZStack {
             
-            gradation(color1: .black, color2: .gray)
+            Gradation(color1: .black, color2: .gray)
             
             VStack {
                 
@@ -52,41 +52,36 @@ struct ContentView: View {
                 
                 if room {
                     TextField("ROOM ID",text:$id)
+                        .font(.system(size:20))
                         .overlay(
                             RoundedRectangle(cornerRadius: 5)
-                                .stroke(Color.black,lineWidth: 3))
-                        
-                    Spacer()
-                    ButtonAction(bool:room,text:"はじめる")
-                   
+                                .stroke(Color.white,lineWidth: 3))
+                        .frame(width: 200, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    
+                    ButtonAction(text:"はじめる", fun: { print("f")})
                 }
                 else{
-                    ButtonAction(bool:room,text:"　 参加する 　")
+                    ButtonAction(text:"　 参加する 　", fun: {self.room.toggle()})
                 }
-                
                 Spacer()
                 
-                Button(action:{self.room.toggle()}){
-                    Text(self.room ? "戻る":"部屋を作成する")
-                }
-                .background(Color.blue)
-                .cornerRadius(5)
-                .scaleEffect(1.5)
-
-                Spacer()
-                Button(action:{self.desktop.toggle()}){
-                    Text("モーダル")
-                }
-                .sheet(isPresented: $desktop){
-                    ModalView(isActive: $desktop)
-                }
+                ButtonAction(text: (self.room ? "戻る":"部屋を作成する"),
+                             fun:{self.room.toggle()})
+            
+            Spacer()
+            Button(action:{self.desktop.toggle()}){
+                Text("モーダル")
+            }
+            .sheet(isPresented: $desktop){
+                ModalView(isActive: $desktop)
+            }
             }
         }
     }
 }
 
 struct ModalView: View {
-
+    
     @Binding var isActive: Bool
     
     var body: some View {
@@ -103,10 +98,13 @@ struct ModalView: View {
         .padding()
     }
 }
-    
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
+        Group {
             ContentView()
+            
+        }
     }
 }
 
