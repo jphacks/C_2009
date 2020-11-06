@@ -1,0 +1,6 @@
+framework module Pods_coalay {
+  umbrella header "Pods-coalay-umbrella.h"
+
+  export *
+  module * { export * }
+}
