@@ -15,11 +15,11 @@ import Combine
 
 final class ChatViewModel:ObservableObject{
     
-    var client :HelloGrpc_HelloGrpcClient
+    private var client :HelloGrpc_HelloGrpcClient
     //最新のメッセージがないか確認
     @Published var roomInfo:HelloGrpc_RoomInfo
     @Published var messages:[HelloGrpc_Message]
-    var roomId:String
+    @Published var uiState = UIState.Home
     init() {
         let group = MultiThreadedEventLoopGroup(numberOfThreads: 1)
         let channel = ClientConnection.insecure(group: group)
@@ -27,9 +27,12 @@ final class ChatViewModel:ObservableObject{
         self.client = HelloGrpc_HelloGrpcClient(channel: channel)
         self.roomInfo = HelloGrpc_RoomInfo()
         self.messages = []
-        self.roomId = ""
         
     }
+    func changeState(newState:UIState){
+        self.uiState = newState
+    }
+    
     func greetServer(name:String){
         var message = HelloGrpc_GreetRequest()
         message.name = name
@@ -49,6 +52,7 @@ final class ChatViewModel:ObservableObject{
         client.addRoom(message).response.whenComplete{ result in
             switch result {
             case let .success(response):
+                self.roomInfo = response
                 print("id:\(response.id),count:\(response.messageCount)")
             case let .failure(error):
                 print("get failed with error: \(error)")
