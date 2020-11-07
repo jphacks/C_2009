@@ -9,10 +9,17 @@
 import SwiftUI
 
 struct TransparentWindow: View {
+    @ObservedObject var viewModel: ChatViewModel
     var width:CGFloat
     var height:CGFloat
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/).frame(width: width, height: height, alignment: .center).foregroundColor(.black)
+            VStack{
+                ForEach(0..<viewModel.messages.count){num in
+                    ChatText(text: viewModel.messages[num].content)
+                }
+            }
+            .frame(width: width, height: height, alignment: .center)
     }
 }
+
 
