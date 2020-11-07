@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct tool_bar: View {
+struct GuestToolBar: View {
     @State var remote_sound = false
     @State var remote_camera = false
     var body: some View {
@@ -36,25 +36,11 @@ struct tool_bar: View {
             }
             .frame(width: 50, height: 80)
             
-            VStack {
-                Button(action: {
-                        print("c")}){
-                    Image("join")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 30, height: 30).padding()
-                }
-            }
-            .frame(width: 50, height: 80)
         }
         .scaleEffect(1.5)
         .frame(width: 300, height: 300)
     }
 }
 
-struct tool_bar_Previews: PreviewProvider {
-    static var previews: some View {
-        tool_bar()
-    }
-}
+
 

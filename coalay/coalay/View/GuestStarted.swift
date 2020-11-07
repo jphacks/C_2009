@@ -9,13 +9,9 @@
 import SwiftUI
 
 struct GuestStarted: View {
+    @ObservedObject var viewModel:ChatViewModel
     var body: some View {
-        tool_bar()
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
-struct GuestStarted_Previews: PreviewProvider {
-    static var previews: some View {
-        GuestStarted()
-    }
-}

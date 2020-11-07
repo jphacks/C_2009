@@ -24,9 +24,9 @@ struct ButtonAction: View {
 }
 
 struct ContentView: View {
-    @State var uiState = UIState.guestStarted
+
     @State var roomID :String = ""
-    var chat = ChatViewModel()
+    @ObservedObject var chat = ChatViewModel()
     var body: some View {
         
         ZStack {
@@ -35,27 +35,27 @@ struct ContentView: View {
                 Spacer()
                 Group{
                     
-                    if uiState == .Home{
-                        Home()
+                    if chat.uiState == .Home{
+                        Home(viewModel:chat)
                         
                     }
-                    else if uiState == .guestHome{
-                        GestHome(id:roomID)
+                    else if chat.uiState == .guestHome{
+                        GuestHome(viewModel: chat, id:roomID)
                         
                     }
-                    else if uiState == .hostHome
+                    else if chat.uiState == .hostHome
                     {
-                        HostHome()
+                        HostHome(viewModel:chat)
 
                     }
-                    else if uiState == .hostStarted
+                    else if chat.uiState == .hostStarted
                     {
-                        HostStarted()
+                        HostStarted(viewModel:chat)
 
                     }
-                    else if uiState == .guestStarted
+                    else if chat.uiState == .guestStarted
                     {
-                        GuestStarted()
+                        GuestStarted(viewModel:chat)
 
                     }
                 }

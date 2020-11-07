@@ -9,13 +9,13 @@
 import SwiftUI
 
 struct Home: View {
-    @State var room = false
     
+    @ObservedObject var viewModel:ChatViewModel
     var body: some View {
         VStack {
             Icon()
             Spacer()
-            Button(action:{print("a")}) {
+            Button(action:{self.viewModel.changeState(newState:.guestHome )}) {
                 Text("　 参加する 　")
             }
             .background(Color.blue)
@@ -24,7 +24,12 @@ struct Home: View {
             .border(Color.clear)
             
             Spacer()
-            Button(action:{print("b")}) {
+            Button(action:{
+                let id = UUID().uuidString
+                self.viewModel.addRoom(id: id)
+                self.viewModel.changeState(newState:.hostHome )
+                
+            }) {
                 Text("部屋を作成する")
             }
             .background(Color.blue)
@@ -37,8 +42,4 @@ struct Home: View {
     }
 }
 
-struct Home_Previews: PreviewProvider {
-    static var previews: some View {
-        Home()
-    }
-}
+
