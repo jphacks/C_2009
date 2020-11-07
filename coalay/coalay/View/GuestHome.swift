@@ -8,8 +8,10 @@
 
 import SwiftUI
 
-struct GestHome: View {
+struct GuestHome: View {
+    @ObservedObject var viewModel:ChatViewModel
     @State var id:String
+    
     var body: some View {
         VStack{
             Icon()
@@ -21,7 +23,13 @@ struct GestHome: View {
                         .stroke(Color.white,lineWidth: 3))
                 .frame(width: 200, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
              Spacer()
-            Button(action:{print("a")}) {
+            Button(action:{
+                self.viewModel.getRoomInfo(id: self.id)
+                self.viewModel.changeState(newState: .guestStarted)
+                WindowControllers.shared.GuestToolBarController.showWindow(nil)
+                WindowControllers.shared.MainController.close()
+                    
+            }) {
                 Text("　　はじめる　　")
             }
             .background(Color.blue)
@@ -30,7 +38,7 @@ struct GestHome: View {
             
             Spacer()
             
-            Button(action:{print("a")}) {
+            Button(action:{self.viewModel.changeState(newState: .Home)}) {
                 Text("　  戻る  　")
             }
             .background(Color.blue)

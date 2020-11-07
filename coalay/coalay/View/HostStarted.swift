@@ -9,13 +9,11 @@
 import SwiftUI
 
 struct HostStarted: View {
+    @ObservedObject var viewModel:ChatViewModel
+    
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
-struct HostStarted_Previews: PreviewProvider {
-    static var previews: some View {
-        HostStarted()
-    }
-}
+
