@@ -12,6 +12,8 @@ import SwiftUI
 class WindowControllers{
     static var shared = WindowControllers()
     
+    var viewModel: ChatViewModel = ChatViewModel()
+    
     private let width = NSScreen.main?.frame.width ?? 400
     private let height = NSScreen.main?.frame.height ?? 400
     var mainWindow = MainWindow()
@@ -20,7 +22,7 @@ class WindowControllers{
     var GuestToolBarController :NSWindowController
     var HostToolBarController :NSWindowController
     init(){
-        let subcontentView = TransparentWindow(width: width, height: height)
+        let subcontentView = TransparentWindow(viewModel: viewModel, width: width, height: height)
         let GuesttoolBarContentView = GuestToolBar()
         let HosttoolBarContentView = HostToolBar()
         

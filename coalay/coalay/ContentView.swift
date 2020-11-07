@@ -26,7 +26,7 @@ struct ButtonAction: View {
 struct ContentView: View {
 
     @State var roomID :String = ""
-    @ObservedObject var chat = ChatViewModel()
+    @ObservedObject var chat = WindowControllers.shared.viewModel
     var body: some View {
         
         ZStack {
